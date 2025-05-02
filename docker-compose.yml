@@ -23,7 +23,7 @@ services:
       - "443:443"
     volumes:
       - ./nginx-config:/etc/nginx/conf.d
-      - ./www:/usr/share/nginx/html
+      - /opt/homarr/www:/usr/share/nginx/html
     networks:
       - tigerkits-network
 
